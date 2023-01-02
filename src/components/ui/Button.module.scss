@@ -1,0 +1,103 @@
+@import "../../scss/utility.scss";
+
+// .btn {
+// 	cursor: pointer;
+// 	background: transparent;
+// 	border: 1px solid $green;
+// 	padding: rem(8) rem(32);
+// 	border-radius: rem(25);
+// 	margin-left: 1rem;
+// 	transition: all 0.2s ease-in-out;
+
+// 	&:hover,
+// 	&:active {
+// 		background: $light-green;
+// 		border-color: $light-green;
+// 		color: $white;
+// 	}
+
+// 	&--solid {
+// 	}
+
+// 	&--outline {
+// 	}
+// }
+
+.btn {
+	position: relative;
+	display: inline-flex;
+
+	&__text {
+	}
+
+	&__icon {
+		display: block;
+
+		&--after {
+		}
+	}
+
+	&__empty {
+		// &--big {
+		position: relative;
+		padding: rem(8) rem(32);
+		color: $green;
+		border: rem(1) solid $green;
+		overflow: hidden;
+		border-radius: rem(25);
+		transition: all 0.5s ease;
+		z-index: 1;
+
+		&::before {
+			content: "";
+			position: absolute;
+			transition: inherit;
+			bottom: 0;
+			left: 0;
+			height: 0;
+			width: 100%;
+			z-index: -1;
+		}
+
+		&:hover,
+		&:active {
+			color: $white;
+			border: rem(1) solid $light-green;
+
+			&::before {
+				height: 100%;
+				background-color: $light-green;
+			}
+		}
+		// }
+	}
+
+	&__solid {
+		// &--green {
+		border-radius: rem(25);
+		padding: rem(8) rem(32);
+		background-color: $green;
+		color: $white;
+		transition: all 0.5s ease;
+
+		&.large {
+			padding: rem(12) rem(103);
+		}
+
+		&.extra {
+			padding: rem(12) rem(234);
+		}
+
+		&:hover,
+		&:active {
+			background-color: $light-green;
+			// }
+		}
+
+		// &--blue {
+		// 	padding: rem(10) rem(16);
+		// 	background-color: rgba($white, 0.05);
+		// 	border-radius: rem(32);
+		// }
+	}
+}

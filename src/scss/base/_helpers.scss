@@ -1,0 +1,21 @@
+@import "../utility.scss";
+//-------------------------------------
+//-- Container ------------------------
+//-------------------------------------
+.wrapper {
+	max-width: calc(100% - #{rem(30)});
+	width: 100%;
+	margin: 0 auto;
+
+	@include break-up(mobile) {
+		max-width: calc(100% - #{rem(60)});
+	}
+
+	@include break-up(laptopsmall) {
+		max-width: calc(100% - #{rem(80)});
+	}
+
+	@include break-up(laptop) {
+		max-width: rem(1220);
+	}
+}

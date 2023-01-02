@@ -1,0 +1,29 @@
+@import "../utility.scss";
+
+html {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden auto;
+	overscroll-behavior-y: none;
+	background-color: $background;
+	color: $color;
+
+	&.hidden {
+		overflow: hidden;
+	}
+}
+
+body {
+	font-family: $regular-branch-font;
+	position: relative;
+	overflow: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+main {
+}
+
+// #wpadminbar {
+//   position: fixed !important;
+// }

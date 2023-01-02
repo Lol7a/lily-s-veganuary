@@ -1,0 +1,197 @@
+@import "../utility.scss";
+
+//-------------------------------------
+//-- Core -----------------------------
+//-------------------------------------
+html {
+	font-size: 2.8vw;
+
+	@include break-up(mobile) {
+		font-size: 2.08vw;
+	}
+
+	@include break-up(tablet) {
+		font-size: 1.56vw;
+	}
+
+	@include break-up(laptopsmall) {
+		font-size: 1.11vw;
+	}
+
+	@include break-up(laptop) {
+		font-size: 16px;
+	}
+
+	@include break-up(desktop) {
+		font-size: 1vw;
+	}
+}
+
+//-------------------------------------
+//-- Headings -------------------------
+//-------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: $regular-branch-font;
+	// font-weight: 400;
+	color: inherit;
+
+	// @-moz-document url-prefix() {
+	// 	font-weight: 500;
+	// }
+}
+
+// h1,
+// .h1 {
+// 	font-size: rem(64);
+// 	line-height: rem(72);
+// 	letter-spacing: -0.02em;
+// }
+
+// h2,
+// .h2 {
+// 	font-size: rem(52);
+// 	line-height: rem(64);
+// 	letter-spacing: -0.02em;
+// }
+
+// h3,
+// .h3 {
+// 	font-size: rem(36);
+// 	line-height: rem(44);
+// 	letter-spacing: -0.02em;
+// }
+
+// h4,
+// .h4 {
+// 	font-size: rem(28);
+// 	line-height: rem(40);
+// 	letter-spacing: -0.02em;
+// }
+
+// h5,
+// .h5 {
+// 	font-size: rem(28);
+// 	line-height: rem(36);
+// 	letter-spacing: -0.02em;
+// }
+
+// h6,
+// .h6 {
+// 	font-size: rem(24);
+// 	line-height: rem(32);
+// 	letter-spacing: -0.02em;
+// }
+
+span,
+.span {
+	display: inline-block;
+	font-size: rem(16);
+	line-height: rem(24);
+	font-family: $regular-montserrat-font;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+}
+
+//-------------------------------------
+//-- Paragraph ------------------------
+//-------------------------------------
+
+p,
+.p {
+	font-size: rem(16);
+	line-height: rem(24);
+	font-family: $regular-montserrat-font;
+	font-weight: 400;
+	letter-spacing: -0.02em;
+
+	a {
+		font-size: inherit;
+		font-weight: inherit;
+		line-height: inherit;
+	}
+}
+
+//-------------------------------------
+//-- Link -----------------------------
+//-------------------------------------
+
+a,
+.a {
+	font-size: rem(15);
+	font-family: $regular-montserrat-font;
+	font-weight: 400;
+	line-height: rem(20);
+	letter-spacing: -0.02em;
+}
+
+//-------------------------------------
+//-- Button ---------------------------
+//-------------------------------------
+
+button,
+.button {
+	font-family: $regular-montserrat-font;
+	font-size: rem(16);
+	line-height: rem(20);
+	color: inherit;
+	cursor: pointer;
+}
+
+//-------------------------------------
+//-- utility classes ------------------
+//-------------------------------------
+
+.big {
+	font-size: rem(88);
+	line-height: rem(96);
+	letter-spacing: -0.02em;
+}
+
+// .huge {
+// 	font-size: rem(72);
+// 	line-height: rem(79.2);
+// 	letter-spacing: -0.015em;
+
+// 	@include break-up(tablet) {
+// 		font-size: rem(88);
+// 		line-height: rem(96);
+// 		letter-spacing: -0.02em;
+// 	}
+// }
+
+.xl {
+	font-size: rem(22);
+	line-height: rem(32);
+}
+
+.l {
+	font-size: rem(20);
+	line-height: rem(28);
+}
+
+.m {
+	font-size: rem(18);
+	line-height: rem(28);
+}
+
+.s {
+	font-size: rem(14);
+	line-height: rem(24);
+}
+
+.xs {
+	font-size: rem(14);
+	line-height: rem(20);
+}

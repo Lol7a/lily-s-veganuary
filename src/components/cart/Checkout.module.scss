@@ -1,0 +1,70 @@
+@import "../../scss/utility.scss";
+
+.form {
+	margin: rem(16) 0;
+	height: rem(304);
+	overflow: auto;
+}
+
+.control {
+	margin-bottom: rem(8);
+
+	& label {
+		font-weight: bold;
+		margin-bottom: rem(4);
+		display: block;
+	}
+
+	& input {
+		font-family: $regular-montserrat-font;
+		border: 1px solid $light-grey;
+		border-radius: rem(4);
+		width: rem(320);
+		max-width: 100%;
+	}
+}
+
+.actions {
+	display: flex;
+	justify-content: flex-end;
+	// gap: rem(16);
+
+	& button:first-of-type {
+		// 	color: $green;
+		// 	cursor: pointer;
+		// 	background-color: transparent;
+		// 	border: 1px solid $green;
+		// 	border-radius: rem(25);
+		// 	padding: rem(8) rem(32);
+		margin-right: rem(10);
+
+		// 	&:hover,
+		// 	&:active {
+		// 		background: $light-green;
+		// 		border-color: $light-green;
+		// 		color: $white;
+		// 	}
+	}
+
+	// & .submit {
+	// 	background: $green;
+	// 	color: $white;
+
+	// 	&:hover,
+	// 	&:active {
+	// 		background: $light-green;
+	// 		border-color: $light-green;
+	// 	}
+	// }
+}
+
+.invalid {
+	& label {
+		color: $red;
+	}
+
+	& input {
+		border-color: #aa0b20;
+		background-color: #ffeff1;
+	}
+}

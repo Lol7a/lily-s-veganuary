@@ -1,0 +1,42 @@
+//------------------------------------------
+//-- Utility -------------------------------
+//------------------------------------------
+@import "utility";
+
+//------------------------------------------
+//-- Layout --------------------------------
+//------------------------------------------
+// @import "../components/layout/";
+// @import "../components/layout/layout/HeaderCartButton.module.scss";
+
+//------------------------------------------
+//-- Base -------------------------------
+//------------------------------------------
+@import "base/base";
+@import "base/helpers";
+@import "base/reset";
+@import "base/typography";
+
+//------------------------------------------
+//-- UI ------------------------------------
+//------------------------------------------
+// @import "ui/buttons";
+// @import "ui/burger";
+// @import "ui/forms";
+// @import "ui/socials";
+// @import "ui/swiper-slider";
+// @import "ui/text-content";
+
+//------------------------------------------
+//-- Shared --------------------------------
+//------------------------------------------
+
+//------------------------------------------
+//-- Pages ---------------------------------
+//------------------------------------------
+// @import "pages/about/index";
+// @import "pages/apply/index";
+// @import "pages/contact/index";
+// @import "pages/home/index";
+// @import "pages/news/index";
+// @import "pages/template/index";

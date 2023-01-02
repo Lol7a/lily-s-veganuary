@@ -1,0 +1,39 @@
+@import "../../scss/utility.scss";
+
+.meal {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 1rem;
+	padding: 1rem 1rem 0;
+	border-top: 1px solid $light-green;
+	border-top-left-radius: rem(14);
+	border-top-right-radius: rem(14);
+
+	@media (min-width: 768px) {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	& h3 {
+		font-size: rem(20);
+		margin: 0 0 0.25rem 0;
+	}
+
+	& div:first-of-type {
+		width: 100%;
+		@media (min-width: 768px) {
+			max-width: 80%;
+		}
+	}
+}
+
+.description {
+	font-size: rem(18);
+}
+
+.price {
+	margin-top: 0.25rem;
+	color: $light-green;
+	font-size: 1.25rem;
+}

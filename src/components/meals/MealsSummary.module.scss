@@ -1,0 +1,45 @@
+@import "../../scss/utility.scss";
+
+.summary {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 45rem;
+	width: 90%;
+	margin: auto;
+	padding: 2rem 1rem;
+	text-align: center;
+	background-color: rgba($violet, 0.95);
+	color: white;
+	border-radius: rem(14);
+	box-shadow: 0 1px 18px 10px rgba($black, 0.25);
+	opacity: 0;
+	// animation: summary-appear 1s ease-out;
+
+	& h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		margin-top: 0;
+	}
+
+	& p {
+		font-size: rem(20);
+
+		&:not(:last-of-type) {
+			margin-bottom: 0.5rem;
+		}
+	}
+}
+
+@keyframes summary-appear {
+	from {
+		opacity: 0;
+		transform: translateY(50%) translateX(-50%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(-50%) translateX(-50%);
+	}
+}

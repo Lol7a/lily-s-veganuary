@@ -1,0 +1,25 @@
+@import "../../scss/utility.scss";
+
+.input {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-bottom: 0.5rem;
+
+	@media (min-width: 768px) {
+		justify-content: unset;
+	}
+
+	& label {
+		font-weight: bold;
+		margin-right: 1rem;
+	}
+
+	& input {
+		width: 3rem;
+		padding-left: 0.5rem;
+		font: inherit;
+		border: 1px solid $light-grey;
+		border-radius: rem(5);
+	}
+}

@@ -1,0 +1,28 @@
+@import "./scss/utility.scss";
+
+.circle {
+	position: fixed;
+	transform: translate(-50%, -50%);
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+	background-color: $light-green;
+	border-radius: 50%;
+	z-index: 9999;
+	pointer-events: none;
+
+	&.sm {
+		width: rem(10);
+		height: rem(10);
+	}
+
+	&.md {
+		width: rem(20);
+		height: rem(20);
+	}
+
+	&.lg {
+		width: rem(40);
+		height: rem(40);
+	}
+}

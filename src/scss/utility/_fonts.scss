@@ -1,0 +1,38 @@
+//-------------------------------------
+//-- Fonts Mixin ----------------------
+//-------------------------------------
+$fontLocation: "../../../src/fonts/";
+
+@mixin font-face($name) {
+	@font-face {
+		font-family: "#{$name}";
+		src: url("#{$fontLocation+$name}.woff") format("truetype");
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+}
+
+//-------------------------------------
+//-- Font Variables -------------------
+//-------------------------------------
+$regular-branch-font: "Branch";
+$regular-montserrat-font: "Montserrat";
+// $medium-font: "Poppins-Regular";
+
+//-------------------------------------
+//-- Font Declaration -----------------
+//-------------------------------------
+@include font-face($regular-branch-font);
+// @include font-face($regular-montserrat-font);
+
+//-------------------------------------
+//-- Font Classes ---------------------
+//-------------------------------------
+// .medium {
+// 	font-family: $medium-font;
+// }
+
+// .regular {
+// 	font-family: $regular-font;
+// }

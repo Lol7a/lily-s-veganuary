@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+
+	&,
+	&:before,
+	&:after {
+		box-sizing: border-box;
+	}
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section,
+img,
+video,
+iframe,
+picture {
+	display: block;
+}
+
+a {
+	display: inline-block;
+	color: inherit;
+	pointer-events: auto;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+address {
+	font-style: normal;
+}
+
+button {
+	background: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+input {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	background-color: transparent;
+
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border-color: initial;
+	}
+}
